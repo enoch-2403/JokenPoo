@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">JokenPoo</string>
+    <string name="Develop_by">Desenvolvido por EHJS</string>
+    <string name="title_activity_login">Login</string>
+    <string name="bt_Inicio">Inicio</string>
+    <string name="lbNome">Informe o seu Nome:</string>
+    <string name="inpuNome"></string>
+    <string name="Jogador">Jogador</string>
+    <string name="tvGanhador">Ganhador Jogo</string>
+    <string name="btSair">Finalizar</string>
+</resources>

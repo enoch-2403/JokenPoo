@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Play_User">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/Develop_by"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvPlacarPlay_"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvInputNomeJogador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="Ex: Cayque"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLogoJogador" />
+
+    <TextView
+        android:id="@+id/tvLogoJogador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/Jogador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPlacarAndroid_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:hint="0"
+        app:layout_constraintEnd_toEndOf="@+id/tvPlacarAndroid"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlacarAndroid" />
+
+    <TextView
+        android:id="@+id/tvPlacarPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvPlacarAndroid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlacarFinal" />
+
+    <TextView
+        android:id="@+id/tvPlacarAndroid"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginRight="104dp"
+        android:text="Android"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPlacarPlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvPlacarPlay"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvPlacarPlay_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:hint="0"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPlacarAndroid_"
+        app:layout_constraintStart_toStartOf="@+id/tvPlacarPlay"
+        app:layout_constraintTop_toTopOf="@+id/tvPlacarAndroid_" />
+
+    <TextView
+        android:id="@+id/tvPlacarFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInputNomeJogador" />
+
+    <ImageView
+        android:id="@+id/impedra"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        app:layout_constraintBottom_toBottomOf="@+id/impapel"
+        app:layout_constraintEnd_toStartOf="@+id/impapel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/impapel"
+        app:srcCompat="@drawable/pedra" />
+
+    <ImageView
+        android:id="@+id/impapel"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        app:layout_constraintEnd_toStartOf="@+id/imtesoura"
+        app:layout_constraintStart_toEndOf="@+id/impedra"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlacarFinal"
+        app:srcCompat="@drawable/papel" />
+
+    <ImageView
+        android:id="@+id/imtesoura"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/impapel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/impapel"
+        app:layout_constraintTop_toTopOf="@+id/impapel"
+        app:srcCompat="@drawable/tesoura" />
+
+    <Button
+        android:id="@+id/btSair"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="36dp"
+        android:text="@string/btSair"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
